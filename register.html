@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hlo-Blo Cafee Register</title>
+  <meta charset="UTF-8" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/helalstyle.css" />
+  <link rel="stylesheet" href="css/style.css" <link rel="icon" href="images/logo.png">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <link rel="icon" href="images/cafe.jpg" />
+
+<body class="Register">
+  <div class="registerbox">
+    <center><img class="register-logo" src="images/logo3.png" alt="">
+      <h1 class="register-title">Registeration </h1>
+    </center>
+
+    <form>
+      <p class="register-p">E-mail</p>
+      <input class="regitser-input inputbox" id="mail" type="email" name="" required
+        placeholder="   Enter your E-mail ..">
+      <p class="register-p">User Name</p>
+      <input class="regitser-input inputbox" id="name" type="text" name="" required
+        placeholder="  Enter your username ..">
+      <p class="register-p">Password</p>
+      <input class="register-input inputbox" id="password" type="password" required name=""
+        placeholder="  Enter your password ..">
+      <p class="register-p">Confirm your Password</p>
+      <input class="register-input inputbox" id="password1" type="password" required name=""
+        placeholder=" Enter your password comfirmation ..">
+      <input class="bt opacity-hover  inputbox" id="button" value="register"
+        style="text-align: center; text-transform: capitalize; font-size: 14px; ">
+      <p>If you have an account <a class="register-a" href="login.html"> Sign in here ..</a> </p>
+
+
+
+    </form>
+
+  </div>
+
+  <script>
+    function signup() {
+      var mail = document.getElementById("mail").value;
+      var name = document.getElementById("name").value;
+      var password = document.getElementById("password").value;
+      var password1 = document.getElementById("password1").value;
+      localStorage.setItem("mail1", mail);
+      localStorage.setItem("name1", name);
+      localStorage.setItem("password1", password);
+      localStorage.setItem("password2", password1);
+
+      if (mail.indexOf("@gmail") ==  -1 ) {
+        swal("failed", "Wrong Email type,  Email must be in gmail types of accounts", "error");
+      }
+      else if (name=="" || name.length < 2) {
+        swal("failed", "You should Enter Username ", "error");
+      }
+      else if (password != password1) {
+        swal("failed", " Your Passwords is not matching", "error");
+        }
+      else if (password.length < 6) {
+        swal("failed", " Your Password is too Weak", "error");
+      }
+      else {
+        swal("great job", "Your Registration Is Successfully", "success");
+
+        setInterval(function() {
+          window.location.href = "login.html";
+        },3000)
+        }
+
+    }
+    var button = document.getElementById("button");
+    button.addEventListener("click", () => {
+      signup();
+    });
+
+
+  </script>
+
+
+</body>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LIC Cafe</title>
+    <meta charset="UTF-8" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/helalstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.all.js" integrity="sha512-+gmGvjxNh87FkVPTosMbuFDIz8BGmabm7/IM9hp2rMdoy7A8dOEuaEugTVN1EnB9UC/iky10CfhRB3UqWQaN2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="icon" href="images/logo2.png">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="header">
+        <!--navbar  -->
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" width="90px" height="70px" alt="" />
+            </div>
+            <ul>
+
+                <!--
+
+          
+        -->
+                <li><a class="nav-links" data-link="home"> home </a></li>
+                <li><a class="nav-links" data-link="menu"> Menu </a></li>
+                <li><a class="nav-links" data-link="offers">offers </a></li>
+                <li><a class="nav-links" data-link="branches"> branches </a></li>
+                <li><a class="nav-links" data-link="reviews"> Reviews </a></li>
+                <li><a class="nav-links" data-link="contact"> contact us </a></li>
+                <li><a onclick="exit()" id="exit" class="nav-links exit" style=" background: rgb(43, 82, 87);
+          border-radius: 12px;
+          padding: 7px;
+          color: rgb(255, 255, 255);   
+         font-size: 13;">log out</i> </a></li>
+            </ul>
+        </nav>
+        <!-- End of nav -->
+    </header>
+
+    <!-- End of Header -->
+
+    <!-- Home Section -->
+
+    <div class="home" id="home">
+        <div class="home-content">
+            <div class="homes">
+                <p class="home-desc link" style="margin-bottom: 5px;">
+                    'The place where you will find the coffe mixed with calm and comfort'
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Home section -->
+
+
+    <!-- Section Header -->
+
+    <!-- content of section Header -->
+
+    <section class="menu">
+        <div class="background">
+            <div class="container">
+                <div id="menu" class="section pd-y">
+                    <div class="section-header">
+                        <h2 class="section-title link">welcome to LIC cafe</h2>
+                        <span class="underline"></span>
+                    </div>
+                    <div id="services">
+                        <div class="services-box about-div effect">
+                            <h2 class="center h-secondary"> Hot Drinks</h2>
+                            <img src="images/flat-white.jpg" id="hotdrinks" />
+                            <p> Hot drink names can be tricky and that's why we decided to collect you a alphabetical list of the hot drinks you might bump into. So here you go: the list of most common hot drinks!
+                            </p>
+                        </div>
+                        <div class="services-box about-div effect">
+                            <h2 class="center h-secondary">Cold Drinks</h2>
+                            <a> <img src="images/iced-dirty-chai-latte.jpg" id="colddrinks" /> </a>
+                            <p>Soft drink, any of a class of nonalcoholic beverages but not necessarily carbonated, normally containing a natural and artificial sweetening agent, edible acids, natural or artificial flavours .</p>
+
+                            </p>
+                        </div>
+                        <div class="about-div services-box effect">
+                            <h2 class="center h-secondary">Breakfast</h2>
+                            <img src="images/french-toast.jpg" id="breakfast" />
+                            <p> We do baking all from scratch with natural ingredients. Long live butter! And we're proud to offer delicious gluten-free or spelt flour choices, and vegetarian alternatives as well. Browse our menu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start Offers -->
+        <br id="offers">
+        <div class="offers link">
+            <h1 class="head">Offers</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/french toast roll.jpg" alt="" />
+                        <img src="images/coffee1.jpg" alt="" />
+                    </div>
+                    <p>
+                        french toast roll + cappuccino <span>24$ / <del>34$</del></span>
+                    </p>
+                    <button class="bt opacity-hover " id="but1" onclick="btn1()">buy now</button>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/Halloumi and Zaatar sandwich.jpg" alt="" />
+                        <img src="images/mocha coffee.jpg" alt="" />
+                    </div>
+                    <p>
+                        Halloumi and Zaatar sandwich + mocha coffee<span>22$/ <del>28$</del></span>
+                    </p>
+                    <button class="bt opacity-hover" id="but2" onclick="btn2()">buy now</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/oats with berries.jpg" alt="" />
+                        <img src="images/Strawberry milkshake.jpg" alt="" />
+                    </div>
+                    <p>
+                        Oats with berries + Strawberry milkshake
+                        <span>20$/ <del>35$</del></span>
+                    </p>
+                    <button class="bt opacity-hover" id="but3" onclick="btn3()">buy now</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Offers -->
+
+        <!-- Start our branches -->
+        <br id="branches">
+        <div></div>
+        <div class="branches link">
+            <h1 class="head">Our Branches</h1>
+            <div class="container">
+                <div class="card">
+                    <img src="images/branche 1.jpg" alt="" />
+                    <p>
+                        Americana Plaza, along the 26th of July Corridor, Sheikh Zayed
+                        <br />+111-222-3333
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/branche 2.jpg" alt="" />
+                    <p>
+                        Maadi Corniche, in front of the second entrance to Maadi <br /> +111-222-3333
+                    </p>
+                </div>
+                <div class="card" id="branches">
+                    <img src="images/branche 3.jpg" alt="" />
+                    <p>
+                        48 Al Thawra, Almaza, Heliopolis District, Cairo Governorate
+                        <br />+111-222-3333
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <br id="reviews">
+    <div></div>
+    <h1></h1>
+    <section class="Reviews link">
+        <h1 class="head">Reviews</h1>
+        <div class="reviews-container">
+            <div class="writtenReviews">
+                <div class="Reviews-box-container">
+                    <div class="comment-head">
+                        <span> customers's Comments</span>
+                    </div>
+                    <div class="box-container">
+                        <!---Customer 1-->
+                        <div class="Reviews-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="images/customer1.jpg" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>David</strong>
+                                        <span>@david1985</span>
+                                    </div>
+                                </div>
+                                <div class="theReview">
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>
+                                    I spend every evening at hlo-blo Cafe...by the time I had to leave it felt like I have to leave some kind of home. The staff at People.. they are unbelievably friendly and polite.Its fun to watch them working and getting some more customers into the cafe.
+                                    Each and every food I had there was delicious. Besides the usual drinks they have a nice menu of cocktails as well.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!---Customer 2-->
+                        <div class="Reviews-box" id="link">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="images/customer2.jpg" />
+                                    </div>
+                                    <div class="name-user" id="reviews">
+                                        <strong>Tim</strong>
+                                        <span>@tim1995</span>
+                                    </div>
+                                </div>
+                                <div class="theReview">
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>
+                                    The unique interior of this place is bound to catch your attention.. Must try their cofee and breakfast . Almost every night they have arrange anything like live music or movie night...etc. I cannot think of a nice holiday in old manali without being
+                                    at this cafe! Thank you!!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!---Customer 3-->
+                        <div class="Reviews-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="images/customer3.jpg" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Natalie</strong>
+                                        <span>@natalie1989</span>
+                                    </div>
+                                </div>
+                                <div class="theReview">
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>
+                                    My husband and I stopped in for breakfast yesterday and had a wonderful meal. The order arrived within ten minutes mostly. They came with soup and salad. Breakfast and service were wonderful. I can't wait to go back again.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!---Customer 4-->
+                        <div class="Reviews-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="images/customer4.jpg" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Todd</strong>
+                                        <span>@todd1998</span>
+                                    </div>
+                                </div>
+                                <div class="theReview">
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                    <i class="fas fa star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>
+                                    From the moment we walked into the cafee we know this was going to be an amazing experience for us. The staff were knowledgeable, friendly and accommodating, the cofee was excellent and the ambiance was great. We would definitely be returning for another
+                                    date night or even with family and friends
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="input link" id="contact">
+                <h2>Post your review </h2>
+                <input type="text" id="user" placeholder="Enter your name" required />
+                <input type="email" id="email" placeholder="Enter your  e-mail" required />
+                <textarea placeholder="Type your review " required></textarea>
+                <input class="submit bt opacity-hover" type="reset" onclick="reviews()" value="send" />
+                <p id="ok"></p>
+            </form>
+        </div>
+    </section>
+
+    <!--footer content-->
+
+    <section>
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+                    <div class="footer1-col">
+                        <h4>cafee</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer1-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">offers</a></li>
+                            <li><a href="">returns</a></li>
+                            <li><a href="">order status</a></li>
+                            <li><a href="">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer1-col">
+                        <h4>online order</h4>
+                        <ul>
+                            <li><a href="#">Hot drinks</a></li>
+                            <li><a href="#">cold drinks</a></li>
+                            <li><a href="#">breakfast</a></li>
+                            <li><a href="#">special offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer1-col">
+                        <h4>follow us</h4>
+                        <div class="social-links icons">
+                            <a href=""><img src="images/f_logo_RGB-Hex-Blue_512.png" width="40px" height="40px" />
+                            </a>
+                            <a href=""><img src="images/KEY0.CC-Insta-Icon-Instagram.png" width="40px" height="40px" /></a>
+                            <a href=""><img src="images/SeekPng.com_twitter-logo-black-png_842766.png" width="40px" height="40px" /></a>
+                            <a href=""><img src="images/official-linkedin-icon-png-7.jpg" width="40px" height="40px" </a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                All Rights Reserved. © 2021||2022 LIC cafee online delevry Design By the team
+            </div>
+        </div>
+    </section>
+
+    <script src="cafee.js"></script>
+    <script></script>
+</body>
+
+</html>

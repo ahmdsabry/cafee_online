@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>breakfast section </title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/breakfast.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="images/logo2.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.all.js"
+    integrity="sha512-+gmGvjxNh87FkVPTosMbuFDIz8BGmabm7/IM9hp2rMdoy7A8dOEuaEugTVN1EnB9UC/iky10CfhRB3UqWQaN2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="bar">
+    <div class="sidebar">
+      <div class="logo">
+        <img src="images/logo.png" width="80px" height="50px" alt="" style="margin-left: 20px; margin-top: 15px;" />
+      </div>
+
+      <ul>
+        <li><a href="cafee.html"><i class="fas home"> home </i> </a></li>
+        <li><a href="Hot drinks.html"><i class="fas colddr"> hotdrinks </i> </a></li>
+        <li><a href="cold drinks.html" id="cold"><i onclick="colds()" class="fas hotdrinks"> colddrinks </i> </a></li>
+        <li><a id="reload"> <i onclick="re()" class="fas branches">Breakfast</i> </a></li>
+        <li><a id="about"> <i onclick="about()" class="fas reviews"> about</i> </a></li>
+        <li><a id="exit"><i onclick="exit()" class="fas exit">log out</i> </a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <div class="wrapper">
+    <div class="title">
+      <h4><span id="home">fresh breakfast for good health</span>Breakfast</h4>
+    </div>
+    <div class="menu">
+      <div class="single-menu">
+        <img src="images/break1.jpg" alt="">
+        <div class="menu-content">
+          <h4> coffee and croissants.
+
+            <span>$30</span>
+          </h4>
+          <p> breakfast with cup of coffee, croissants, orange juice and fruit jam on wooden table </p>
+        </div>
+        <button onclick="submit()" id="br1" class="cart" style="width: 29%;">
+          <span id="br1" onclick="submit()">Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break3.jpg" alt="">
+        <div class="menu-content">
+          <h4>Full American Breakfast <span>$50</span></h4>
+          <p>Healthy Full American Breakfast with Eggs Bacon and Pancakes .</p>
+        </div>
+        <button class="cart" id="br2" onclick="submit1()" style="width: 24%;">
+          <span id="br2" onclick="submit1()">Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break5.jpg" alt="">
+        <div class="menu-content">
+          <h4>eggs, pancakes, and toast <span>$50</span></h4>
+          <p>A delicous home style breakfast with crispy bacon, eggs, pancakes, toast, coffee, and orange juice. </p>
+        </div>
+        <button class="cart" id="br3" onclick="submit2()" style="width: 34%;">
+          <span id="br3" onclick="submit2()">Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break6.jpg" alt="">
+        <div class="menu-content">
+          <h4>Keto breakfast plate <span>$25</span></h4>
+          <p>keto breakfast plate with eggs bacon and mashed avocado in wide composition.</p>
+        </div>
+        <button id="br4" onclick="submit3()" class="cart" style="width: 28%;">
+          <span id="br4" onclick="submit3()">Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break7.jpg" alt="">
+        <div class="menu-content">
+          <h4> sweet breakfast <span>$40</span></h4>
+          <p>Breakfast food cake, bread, cookies and a hot coffee with steam .</p>
+        </div>
+        <button class="cart" style="width: 23%; height: 30%;">
+          <span>Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break8.jpg" alt="">
+        <div class="menu-content">
+          <h4> oatmeal porridge breakfast <span>$45</span></h4>
+          <p> eating oatmeal porridge with banana, strawberries and nuts. Healthy breakfast at the morning.</p>
+        </div>
+        <button class="cart" style="width: 32%;">
+          <span>Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break9.jpg" alt="">
+        <div class="menu-content">
+          <h4> Simple Turkish breakfast <span>$35</span></h4>
+          <p> Simple Turkish breakfast with tomato, fried eggs, tea, cheese, bread, kashar and cucumber.</p>
+        </div>
+        <button class="cart" style="width: 32%;">
+          <span>Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="single-menu">
+        <img src="images/break10.jpg" alt="">
+        <div class="menu-content">
+          <h4> classic english breakfast <span>$40</span></h4>
+          <p> Traditional english breakfast with egg, bacon,waffles, mushrooms and tea .</p>
+        </div>
+        <button class="cart" style="width: 26%;">
+          <span>Add to Cart</span>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="footer1" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer1-col">
+            <h4>cafee</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer1-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">offers</a></li>
+              <li><a href="">returns</a></li>
+              <li><a href="">order status</a></li>
+              <li><a href="">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer1-col">
+            <h4>online order</h4>
+            <ul>
+              <li><a href="#">Hot drinks</a></li>
+              <li><a href="#">cold drinks</a></li>
+              <li><a href="#">breakfast</a></li>
+              <li><a href="#">special offer</a></li>
+            </ul>
+          </div>
+          <div class="footer1-col">
+            <h4>follow us</h4>
+            <div class="social-links icons">
+              <a href=""><img src="images/f_logo_RGB-Hex-Blue_512.png" width="40px" height="40px" />
+              </a>
+              <a href=""><img src="images/KEY0.CC-Insta-Icon-Instagram.png" width="40px" height="40px" /></a>
+              <a href=""><img src="images/SeekPng.com_twitter-logo-black-png_842766.png" width="40px"
+                  height="40px" /></a>
+              <a href=""><img src="images/official-linkedin-icon-png-7.jpg" width="40px" height="40px" </a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        All Rights Reserved. © 2021||2022 Hlo-Blo cafee online delevry Design
+        By the team
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+
+    function re() {
+      document.getElementById("reload").addEventListener("click", () => {
+        document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        location.href = "Breakfast.html";
+      });
+    }
+    function about() {
+      var about = document.getElementById("about");
+      var footer = document.getElementById("footer");
+      about.addEventListener("click", () => {
+        footer.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+    function exit() {
+      var exit1 = document.getElementById("exit");
+      exit1.addEventListener("click", () => {
+        location.replace("login.html");
+      });
+    }
+    function colds() {
+      document.getElementById("cold").addEventListener("click", function () {
+        setInterval(function () {
+          window.location.href = "cold drinks.html";
+
+        }, 1000)
+      });
+    }
+
+    function submit() {
+      var br1 = document.getElementById("br1");
+      br1.addEventListener("click", () => {
+        Swal.fire({
+          imageUrl: 'images/break1.jpg',
+          title: 'Coffee And Croissants',
+          text: 'Do you submit this order ?',
+          imageWidth: 300,
+          imageHeight: 200,
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
+          showCancelButton: true,
+          showCloseButton: true,
+          icon: 'warning',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            Swal.fire("your order has been  submitted", "We will send you all the details via gmail", "success");
+
+          }
+          else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire(" your order has been  Canceled", "", "error");
+
+          }
+
+        })
+      });
+
+
+    }
+
+    function submit1() {
+      var br2 = document.getElementById("br2");
+      br2.addEventListener("click", () => {
+        Swal.fire({
+          imageUrl: 'images/break3.jpg',
+          title: 'Full American Breakfast',
+          text: 'Do you Submit this order ?',
+          imageWidth: 300,
+          imageHeight: 200,
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
+          showCancelButton: true,
+          showCloseButton: true,
+          icon: 'warning',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+
+
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            Swal.fire("your order has been  submitted", "We will send you all the details via gmail ", "success");
+
+          }
+          else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire(" your order has been  Canceled", "", "error");
+
+
+          }
+
+        })
+      });
+
+
+    }
+
+
+
+    function submit2() {
+      var br3 = document.getElementById("br3");
+      br3.addEventListener("click", () => {
+        Swal.fire({
+          imageUrl: 'images/break5.jpg',
+          title: 'eggs, pancakes, and toast',
+          text: 'Do you Submit this order ?',
+          imageWidth: 300,
+          imageHeight: 200,
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
+          showCancelButton: true,
+          showCloseButton: true,
+          icon: 'warning',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+
+
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            Swal.fire("your order has been  submitted", " We will send you all the details via gmail ", "success");
+
+
+          }
+          else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire(" your order has been  Canceled", "", "error");
+
+
+          }
+
+        })
+      });
+
+
+    }
+
+
+
+    function submit3() {
+      var br4 = document.getElementById("br4");
+      br4.addEventListener("click", () => {
+        Swal.fire({
+          imageUrl: 'images/break6.jpg',
+          title: 'Keto breakfast plate',
+          text: 'Do you Submit this order ?',
+          imageWidth: 300,
+          imageHeight: 200,
+          confirmButtonText: 'Yes',
+          cancelButtonText: 'No',
+          showCancelButton: true,
+          showCloseButton: true,
+          icon: 'warning',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+
+
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            Swal.fire("your order has been  submitted", "We will send you all the details via gmail", "success");
+
+          }
+          else if (result.dismiss === Swal.DismissReason.cancel) {
+            Swal.fire(" your order has been  Canceled", "", "error");
+
+
+          }
+
+        })
+      });
+
+
+    }
+
+  </script>
+
+</body>
+
+</html>

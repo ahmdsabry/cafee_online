@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Drinks Section</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/hot drinks.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.all.js"
+      integrity="sha512-+gmGvjxNh87FkVPTosMbuFDIz8BGmabm7/IM9hp2rMdoy7A8dOEuaEugTVN1EnB9UC/iky10CfhRB3UqWQaN2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="bar">
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            width="80px"
+            height="50px"
+            alt=""
+            style="margin-left: 20px; margin-top: 15px"
+          />
+        </div>
+
+        <ul>
+          <li>
+            <a href="cafee.html"><i class="fas home"> home </i> </a>
+          </li>
+          <li>
+            <a id="reload"><i  onclick="re()" class="fas colddr"> hotdrinks </i> </a>
+          </li>
+          <li>
+            <a href="cold drinks.html"
+              ><i class="fas hotdrinks"> colddrinks </i>
+            </a>
+          </li>
+          <li>
+            <a href="breakfast.html">
+              <i class="fas branches">breakfast </i>
+            </a>
+          </li>
+          <li>
+            <a id="about">
+              <i class="fas reviews" onclick="about()"> about</i>
+            </a>
+          </li>
+          <li>
+            <a id="exit"><i class="fas exit" onclick="exit()">log out</i> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="title" id="home">
+        <h4><span>Hot drinks to put you in a good mood</span>Hot Drinks</h4>
+      </div>
+      <div class="menu">
+        <div class="single-menu">
+          <img src="images/HotDrink8.jpg" alt="" />
+          <div class="menu-content">
+            <h4>
+              hot chocolate.
+
+              <span>$20</span>
+            </h4>
+            <p>
+              Hot chocolate taken to a new level—flavors of caramelized white
+              chocolate
+            </p>
+          </div>
+          <button id="hot1"  onclick="submit()" class="cart">
+            <span  onclick="submit()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink9.jpg" alt="" />
+          <div class="menu-content">
+            <h4>latte coffee <span>$21</span></h4>
+            <p>
+              latte coffee shots topped with hot water create a light layer of
+              crema.
+            </p>
+          </div>
+          <button id="hot2"  onclick="submit1()" class="cart" style="width: 24%">
+            <span  onclick="submit1()" >Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink3.jpg" alt="" />
+          <div class="menu-content">
+            <h4>Turkish Coffe <span>$15</span></h4>
+            <p>
+              Turkish coffee is made by combining finely ground coffee beans
+              with water.
+            </p>
+          </div>
+          <button id="hot3"  onclick="submit2()" class="cart">
+            <span  onclick="submit2()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink4.jpg" alt="" />
+          <div class="menu-content">
+            <h4>Chai<span>$10</span></h4>
+            <p>
+              Tea is an aromatic beverage prepared by pouring hot or boiling
+              water over leaves
+            </p>
+          </div>
+          <button id="hot4"  onclick="submit3()" class="cart" style="width: 28%">
+            <span  onclick="submit3()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink13.jpg" alt="" />
+          <div class="menu-content">
+            <h4>classic cofee <span>$22</span></h4>
+            <p>
+              Cup of black morning coffee and cofee beans scattered on brown
+              wooden table.
+            </p>
+          </div>
+          <button id="hot5"  onclick="submit4()" class="cart" style="width: 28%">
+            <span  onclick="submit4()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink10.jpg" alt="" />
+          <div class="menu-content">
+            <h4>Cappucino<span>$20</span></h4>
+            <p>
+              a cappuccino starts with a bottom layer of one or two shots of
+              espresso.
+            </p>
+          </div>
+          <button id="hot6" class="cart">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink12.jpg" alt="" />
+          <div class="menu-content">
+            <h4>Green lemon tea<span>$10</span></h4>
+            <p>a healthy Green lemon herbal tea cups on wooden desk.</p>
+          </div>
+          <button id="hot7" class="cart" style="width: 20%">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/HotDrink14.jpg" alt="" />
+          <div class="menu-content">
+            <h4>sahlep hot drink<span>$15</span></h4>
+            <p>Hot orchid with Nuts will definitely put you in a good mood.</p>
+          </div>
+          <button id="hot8" class="cart" style="width: 22%">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="footer1" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer1-col">
+              <h4>cafee</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">offers</a></li>
+                <li><a href="">returns</a></li>
+                <li><a href="">order status</a></li>
+                <li><a href="">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>online order</h4>
+              <ul>
+                <li><a href="#">Hot drinks</a></li>
+                <li><a href="#">cold drinks</a></li>
+                <li><a href="#">breakfast</a></li>
+                <li><a href="#">special offer</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>follow us</h4>
+              <div class="social-links icons">
+                <a href=""
+                  ><img
+                    src="images/f_logo_RGB-Hex-Blue_512.png"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+                <a href=""
+                  ><img
+                    src="images/KEY0.CC-Insta-Icon-Instagram.png"
+                    width="40px"
+                    height="40px"
+                /></a>
+                <a href=""
+                  ><img
+                    src="images/SeekPng.com_twitter-logo-black-png_842766.png"
+                    width="40px"
+                    height="40px"
+                /></a>
+                <a href=""
+                  ><img src="images/official-linkedin-icon-png-7.jpg"
+                  width="40px" height="40px"</a
+                >
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          All Rights Reserved. © 2021||2022 Hlo-Blo cafee online delevry Design
+          By the team
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+function re() {
+  document.getElementById("reload").addEventListener("click",()=> {
+    document.getElementById("home").scrollIntoView({behavior:"smooth",block:"nearest"});
+location.href="hot drinks.html";
+  });
+}
+function about() {
+    var about=document.getElementById("about");
+    var footer=document.getElementById("footer");
+    about.addEventListener("click",()=> {
+footer.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
+function exit() {
+  var exit1=document.getElementById("exit");
+  exit1.addEventListener("click",()=> {
+    location.replace("login.html");
+  });
+}
+
+
+      function submit() {
+        var cold1 = document.getElementById("hot1");
+        cold1.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/HotDrink8.jpg",
+            title: "Hot Chocolate",
+            text: "Do you submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit1() {
+        var cold2 = document.getElementById("hot2");
+        cold2.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/HotDrink9.jpg",
+            title: "Latte Coffee",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail ",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit2() {
+        var cold3 = document.getElementById("hot3");
+        cold3.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/HotDrink3.jpg",
+            title: "Turkish Coffe",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                " We will send you all the details via gmail ",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit3() {
+        var cold4 = document.getElementById("hot4");
+        cold4.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/HotDrink4.jpg",
+            title: "Chai",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit4() {
+        var cold5 = document.getElementById("hot5");
+        cold5.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/HotDrink13.jpg",
+            title: "Classic Cofee",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cold Drinks Section</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/cold drinks.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="images/logo2.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.0/sweetalert2.all.js"
+      integrity="sha512-+gmGvjxNh87FkVPTosMbuFDIz8BGmabm7/IM9hp2rMdoy7A8dOEuaEugTVN1EnB9UC/iky10CfhRB3UqWQaN2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="bar">
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            width="80px"
+            height="50px"
+            alt=""
+            style="margin-left: 20px; margin-top: 15px"
+          />
+        </div>
+
+        <ul>
+          <li>
+            <a href="cafee.html"><i class="fas home"> home </i> </a>
+          </li>
+          <li>
+            <a href="Hot drinks.html"><i class="fas colddr"> hotdrinks </i> </a>
+          </li>
+          <li>
+            <a href="cold drinks.html"
+              ><i class="fas hotdrinks"> colddrinks </i>
+            </a>
+          </li>
+          <li>
+            <a href="breakfast.html">
+              <i class="fas branches">breakfast </i>
+            </a>
+          </li>
+          <li>
+            <a id="about">
+              <i class="fas reviews" onclick="about()"> about</i>
+            </a>
+          </li>
+          <li>
+            <a id="exit"><i class="fas exit" onclick="exit()">log out</i> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="title">
+        <h4><span>cold drinks to put you in a cool mood</span>Cold Drinks</h4>
+      </div>
+      <div class="menu">
+        <div class="single-menu">
+          <img src="images/cold blueberry smoothie.jpg" alt="" />
+          <div class="menu-content">
+            <h4>blueberry smoothie <span>$20</span></h4>
+            <p>
+              What are you waiting for? This is the best blueberry smoothie you
+              will ever get.
+            </p>
+          </div>
+          <button id="cold1" onclick="submit()" class="cart">
+            <span id="cold1" onclick="submit()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold mango smoothie.jpg" alt="" />
+          <div class="menu-content">
+            <h4>mango smoothie <span>$21</span></h4>
+            <p>
+              How do you know when you made it? When you are drinking mango
+              smoothies.
+            </p>
+          </div>
+          <button id="cold2" onclick="submit1()" class="cart">
+            <span id="cold2" onclick="submit1()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold chocolate milkshake.jpg" alt="" />
+          <div class="menu-content">
+            <h4>chocolate milkshake <span>$15</span></h4>
+            <p>
+              There is nothing better than a friend unless it's a friend with a
+              chocolate shake.
+            </p>
+          </div>
+          <button id="cold3" onclick="submit2()" class="cart">
+            <span id="cold3" onclick="submit2()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold iced coffee.jpg" alt="" />
+          <div class="menu-content">
+            <h4>iced coffee<span>$10</span></h4>
+            <p>This is my second iced coffee of the day. Thanks for asking.</p>
+          </div>
+          <button id="cold4" onclick="submit3()" class="cart">
+            <span id="cold4" onclick="submit3()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold iced green tea.jpg" alt="" />
+          <div class="menu-content">
+            <h4>iced green tea <span>$22</span></h4>
+            <p>
+              American-style iced green tea is the perfect drink for a hot,
+              sunny day.
+            </p>
+          </div>
+          <button id="cold5" onclick="submit4()" class="cart">
+            <span id="cold5" onclick="submit4()">Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold iced mocha.jpg" alt="" />
+          <div class="menu-content">
+            <h4>iced mocha<span>$20</span></h4>
+            <p>
+              Too much Monday, not enough iced mocha put you in a good mood.
+            </p>
+          </div>
+          <button class="cart">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold oreo milkshake.jpg" alt="" />
+          <div class="menu-content">
+            <h4>oreo milkshake<span>$20</span></h4>
+            <p>
+              A lot of people love Oreos. So their manufacturer is making money.
+              That means more dividends for shareholders.
+            </p>
+          </div>
+          <button class="cart">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="single-menu">
+          <img src="images/cold strawberry banana smoothie.jpg" alt="" />
+          <div class="menu-content">
+            <h4 style="font-size: 21px">
+              strawberry banana smoothie<span>$20</span>
+            </h4>
+            <p>Enjoy summer days with strawberry banana smoothies.</p>
+          </div>
+          <button class="cart">
+            <span>Add to Cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="footer1" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer1-col">
+              <h4>cafee</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">offers</a></li>
+                <li><a href="">returns</a></li>
+                <li><a href="">order status</a></li>
+                <li><a href="">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>online order</h4>
+              <ul>
+                <li><a href="#">Hot drinks</a></li>
+                <li><a href="#">cold drinks</a></li>
+                <li><a href="#">breakfast</a></li>
+                <li><a href="#">special offer</a></li>
+              </ul>
+            </div>
+            <div class="footer1-col">
+              <h4>follow us</h4>
+              <div class="social-links icons">
+                <a href=""
+                  ><img
+                    src="images/f_logo_RGB-Hex-Blue_512.png"
+                    width="40px"
+                    height="40px"
+                  />
+                </a>
+                <a href=""
+                  ><img
+                    src="images/KEY0.CC-Insta-Icon-Instagram.png"
+                    width="40px"
+                    height="40px"
+                /></a>
+                <a href=""
+                  ><img
+                    src="images/SeekPng.com_twitter-logo-black-png_842766.png"
+                    width="40px"
+                    height="40px"
+                /></a>
+                <a href=""
+                  ><img
+                    src="images/official-linkedin-icon-png-7.jpg"
+                    width="40px"
+                    height="40px"
+                /></a>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          All Rights Reserved. © 2021||2022 Hlo-Blo cafee online delevry Design
+          By the team
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function about() {
+        var about = document.getElementById("about");
+        var footer = document.getElementById("footer");
+        about.addEventListener("click", () => {
+          footer.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+      function exit() {
+        var exit1 = document.getElementById("exit");
+        exit1.addEventListener("click", () => {
+          location.replace("login.html");
+        });
+      }
+
+      function submit() {
+        var cold1 = document.getElementById("cold1");
+        cold1.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/cold blueberry smoothie.jpg",
+            title: "Blueberry smoothie",
+            text: "Do you submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit1() {
+        var cold2 = document.getElementById("cold2");
+        cold2.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/cold mango smoothie.jpg",
+            title: "mango smoothie",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail ",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit2() {
+        var cold3 = document.getElementById("cold3");
+        cold3.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/cold chocolate milkshake.jpg",
+            title: "chocolate milkshake",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                " We will send you all the details via gmail ",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit3() {
+        var cold4 = document.getElementById("cold4");
+        cold4.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/cold iced coffee.jpg",
+            title: "iced coffee",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+
+      function submit4() {
+        var cold5 = document.getElementById("cold5");
+        cold5.addEventListener("click", () => {
+          Swal.fire({
+            imageUrl: "images/cold iced green tea.jpg",
+            title: "Iced green tea",
+            text: "Do you Submit this order ?",
+            imageWidth: 300,
+            imageHeight: 200,
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            showCancelButton: true,
+            showCloseButton: true,
+            icon: "warning",
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "your order has been  submitted",
+                "We will send you all the details via gmail",
+                "success"
+              );
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire(" your order has been  Canceled", "", "error");
+            }
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

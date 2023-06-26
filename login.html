@@ -1,0 +1,71 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hlo-Blo Cafee Login</title>
+      <meta charset="UTF-8" />
+      <!-- css -->
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
+      <link rel="stylesheet" href="css/helalstyle.css" />
+      <link
+        rel="stylesheet"
+        href="css/style.css"
+      <link rel="icon"href="images/cafe.jpg"/>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+      <body class="login">
+                <div class="loginbox">
+                    <img class="login-logo" src="images/logo3.png" alt="">
+                    <h1 class="login-title">Login</h1>
+                    <form>
+                        <p class="login-p">User Name</p>
+                        <input class="login-input inputbox" id="user" type="text"  placeholder="Enter your username">
+                        <p class="">Password</p>
+                        <input class="login-input inputbox" id="pass" type="password"  placeholder="Enter your password">
+                        <input type="button"  class="bt opacity-hover   inputbox"   value="login" id="button"><br>
+                        <a class="login-a" href="" >Lost your password?</a><br>
+                        <p>If u dont have an account <a class="login-a" href="register.html" >Sign up here ..</a> </p>
+                        
+
+
+                    </form>
+
+                </div>
+
+                <script>
+                  function login() {
+    var user=document.getElementById("user").value;
+  var pass=document.getElementById("pass").value;
+
+  var nam=localStorage.getItem("name1");
+  var pas=localStorage.getItem("password1");
+
+  if(user==nam && pass==pas) {
+    swal("great job "," your login  is  correct  ","success");
+setInterval(function() {
+  location.replace("cafee.html");
+
+},3000)
+
+  }
+  else if(user=="" || pass=="") {
+    swal("failed","Username or Password is correct please try again ..! ","error");
+
+}
+  else {
+    swal("failed","Username or Password is correct please try again ..! ","error");
+
+}
+
+}
+
+
+var button=document.getElementById("button");
+button.addEventListener("click",()=> {
+login();
+});
+
+
+
+</script>
+            </body>
